@@ -48,18 +48,18 @@
           <nav class="main-nav">
             <!-- ***** Logo Start ***** -->
             <a href="index.html" class="logo" id="logo">
-              <img src="assets/images/Logo-gg-tipo-blanco.png" alt="">
+              <img id="inicio" src="assets/images/Logo-gg-tipo-blanco.png" alt="">
             </a>
             <!-- ***** Logo End ***** -->
             <!-- ***** Menu Start ***** -->
             <ul class="nav" id="main-menu">
               <li><a href="#inicio" class="active">Inicio</a></li>
-              <li><a href="#mi-historia" >Mi historia</a></li>
+              <li><a href="#historia">Mi historia</a></li>
               <li><a href="#resultados">Resultados</a></li>
               <li><a href="#planes">Planes</a></li>
-              <li><a href="#contacto">Entrenemos</a></li>
-          </ul>
-          
+              <li><a href="#formulario">Entrenemos</a></li>
+            </ul>
+
             <a class='menu-trigger'>
               <span>Menu</span>
             </a>
@@ -71,12 +71,14 @@
   </header>
   <!-- ***** Header Area End ***** -->
   <div class="whatsapp-button">
-    <a href="https://wa.me/1234567890" target="_blank">
+    <a href="https://wa.me/+5492976212161?text=Hola%20vengo%20de%20la%20página%20web,%20quiero%20información%20de%20Asesoramiento%20físico"
+      target="_blank">
       <img src="assets/images/mensaje-de-telefono.png" alt="WhatsApp">
     </a>
   </div>
+
   <!-- ***** Main Banner Area Start ***** -->
-  <div class="main-banner">
+  <div  class="main-banner">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 align-self-center">
@@ -87,10 +89,10 @@
             <p></p>
             <div class="buttons">
               <div class="border-button">
-                <a href="">Entrenemos</a>
+                <a href="#formulario">Entrenemos</a>
               </div>
               <div class="main-button">
-                <a href="" target="_blank">WhatsApp</a>
+                <a href="https://wa.me/+5492976212161?text=Hola%20vengo%20de%20la%20página%20web,%20quiero%20información%20de%20Asesoramiento%20físico" target="_blank">WhatsApp</a>
               </div>
             </div>
           </div>
@@ -119,12 +121,12 @@
   </div>
   <div class="item-details-page">
 
-    <div  class="container" >
+    <div  class="container">
       <div class="row">
         <div class="col-lg-12">
           <div class="section-heading">
             <div class="line-dec"></div>
-            <h2>Mi <em>Historia</em></h2>
+            <h2 >Mi <em>Historia</em></h2>
           </div>
         </div>
         <div class="col-lg-7">
@@ -139,12 +141,12 @@
                 src="assets/images/Diseño sin título.png" alt="" style="max-width: 50px; border-radius: 50%;"></a>
             <h6>Gonzalo Goy<br><a href="https://www.instagram.com/gonzalogoy/" target="_blank">@GonzaloGoy</a></h6>
           </span>
-          <p>¿Sentiste alguna vez que te merecés una vida mucho más
+          <p style="font-family:montserrat !important;">¿Sentiste alguna vez que te merecés una vida mucho más
             saludable de la que tenés? ¿Que tu cuerpo no está alineado con
             tus deseos y objetivos?</p> <br>
-          <p><strong></strong>YO TAMBIÉN LO SENTÍ </strong>
+          <p style="font-family:montserrat !important;"><strong></strong>YO TAMBIÉN LO SENTÍ. </strong>
             Me llamo Gonzalo Goy, tengo 28 años, y soy entrenador
-            certif cado por la Federación Internacional de Fisicoculturismo y
+            certificado por la Federación Internacional de Fisicoculturismo y
             Fitness (IFBB).
             Vivo con abundancia de lo que amo: Compito nacional e
             internacionalmente en el deporte que me apasiona, y todos
@@ -152,14 +154,26 @@
             persona que desean ser a través de mis planes de entrenamiento
             y nutrición.
           </p> <br>
-          <p>Mi mayor virtud es que no nací talentoso, ni con una genética
+          <p style="font-family:montserrat !important;">Mi mayor virtud es que no nací talentoso, ni con una genética
             privilegiada, todo lo que tengo lo gané con disciplina y
             desarrollando un método. Estoy acá para enseñarte ese método.</p>
 
-          <form action="submit">
 
-            <button type="submit" id="form-submit" class="main-button">Contactate</button>
-          </form>
+          <button type="submit" id="form-submit" class="main-button">Contactate</button>
+
+
+          <script>
+            document.getElementById('form-submit').addEventListener('click', function () {
+              // Obtener el formulario por su ID
+              var formulario = document.getElementById('formulario');
+              // Hacer scroll hacia el formulario (opcional)
+              formulario.scrollIntoView({ behavior: 'smooth' });
+              // Mostrar el formulario (opcional)
+              formulario.style.display = 'block';
+              // Si quieres enfocar un campo del formulario cuando se haga click en "Contactate", puedes hacerlo así:
+              // formulario.querySelector('input').focus();
+            });
+          </script>
         </div>
       </div>
     </div>
@@ -259,7 +273,7 @@
                   <h2>Los cambios <em>fisicos</em> de mis alumnos.</h2>
                 </div>
               </div>
-              <div class="col-lg-12">
+              <div class="col-lg-12" style="font-family:montserrat !important;">
                 <div class="owl-collection owl-carousel">
                   <div class="item">
                     <img src="assets/images/antes/1.png" alt="">
@@ -330,12 +344,13 @@
         <div class="col-lg-8 mx-auto">
           <div class="section-heading text-center"> <!-- Agregado text-center para centrar el texto -->
             <div class="line-dec"></div>
-            <h2>"No importa la genética que tengas, no importa si intentaste antes y fallaste, no importa si alguna vez
+            <h2 style="font-family:montserrat !important;">"No importa la genética que tengas, no importa si intentaste
+              antes y fallaste, no importa si alguna vez
               te dijeron que no podías, no importa de donde venís sino a dónde vas. Tu pasado no define tu destino, tu
               mentalidad sí."</h2>
           </div>
           <div class="main-button text-center"> <!-- Agregado text-center para centrar el botón -->
-            <a href="create.html">Entrenemos</a>
+            <a href="#formulario">Entrenemos</a>
           </div>
         </div>
       </div>
@@ -354,184 +369,184 @@
         </div>
 
         <div id="planes" class="col-lg-12">
-          <div class="row grid">
+          <div class="row grid" style="font-family:montserrat !important;">
             <div class="col-lg-6 currently-market-item all msc">
-              <div class="item">
-                  <div class="left-image">
-                      <img src="assets/images/market-01.jpg" alt="" style="border-radius: 20px; min-width: 195px;">
-                  </div>
-                  <div class="right-content">
-                      <h4>PLAN ESENCIAL</h4>
-                      <span class="author">
-                        <img src="assets/images/author.jpg" alt="" style="max-width: 50px; border-radius: 50%;">
-                        <span class="stars">⭐️⭐️</span>
-                        
-                        
-                    </span>>
-                      <div class="line-dec"></div>
-                      <!-- Lista de índices -->
-                      <ul class="index-list">
-                          <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
-                            <circle cx="12" cy="12" r="4" fill="purple"/>
-                        </svg> Armamos mensualmente tu plan de entrenamiento y de nutrición.</li>
-                          <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
-                            <circle cx="12" cy="12" r="4" fill="purple"/>
-                        </svg> Videos demostrando los ejercicios</li>
-                        
-                          
-                          <!-- Agrega más índices según sea necesario -->
-                      </ul>
-                      <div class="precios">
-                          <!-- Precio del servicio -->
-                          <span class="price">
-                              Precio: <strong>$9,99 USD</strong>
-                          </span>
-                          <!-- Botón de comprar -->
-                          <div class="main-button">
-                              <a href="">Comprar</a>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          
-          <div class="col-lg-6 currently-market-item all msc">
-            <div class="item">
+              <div class="item" style="">
                 <div class="left-image">
-                    <img src="assets/images/market-01.jpg" alt="" style="border-radius: 20px; min-width: 195px;">
+                  <img src="assets/images/img2.png" alt="" style="border-radius: 20px; min-width: 195px;">
                 </div>
                 <div class="right-content">
-                    <h4>PLAN AVANZADO</h4>
-                    <span class="author">
-                      <img src="assets/images/author.jpg" alt="" style="max-width: 50px; border-radius: 50%;">
-                      <span class="stars">⭐️⭐️⭐️</span>
-                      
-                      
-                  </span>>
-                    <div class="line-dec"></div>
-                    <!-- Lista de índices -->
-                    <ul class="index-list">
-                        <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
-                          <circle cx="12" cy="12" r="4" fill="purple"/>
-                      </svg> Armamos mensualmente tu plan de entrenamiento y de nutrición.</li>
-                        <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
-                          <circle cx="12" cy="12" r="4" fill="purple"/>
-                      </svg> Videos demostrando los ejercicios</li>
-                      <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
-                        <circle cx="12" cy="12" r="4" fill="purple"/>
-                    </svg> Me escribís por WhatsApp cada dos semanas para ponernos al tanto de cómo
-                    venís.</li>
-                        
-                        <!-- Agrega más índices según sea necesario -->
-                    </ul>
-                    <div class="precios">
-                        <!-- Precio del servicio -->
-                        <span class="price">
-                            Precio: <strong>$24,99 USD</strong>
-                        </span>
-                        <!-- Botón de comprar -->
-                        <div class="main-button">
-                            <a href="">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-6 currently-market-item all msc">
-          <div class="item">
-              <div class="left-image">
-                  <img src="assets/images/market-01.jpg" alt="" style="border-radius: 20px; min-width: 195px;">
-              </div>
-              <div class="right-content">
-                  <h4>PLAN PROFESIONAL</h4>
+                  <h4>PLAN ESENCIAL</h4>
                   <span class="author">
-                    <img src="assets/images/author.jpg" alt="" style="max-width: 50px; border-radius: 50%;">
-                    <span class="stars">⭐️⭐️⭐️⭐️</span>
-                    
-                    
-                </span>>
-                  <div class="line-dec"></div>
+                    <img src="assets/images/icon-01.png" alt="" style="max-width: 50px; border-radius: 50%;">
+                    <span class="stars">⭐️⭐️</span>
+
+
+                  </span>>
+
                   <!-- Lista de índices -->
                   <ul class="index-list">
-                      <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
-                        <circle cx="12" cy="12" r="4" fill="purple"/>
-                    </svg> Armamos mensualmente tu plan de entrenamiento y de nutrición.</li>
-                      <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
-                        <circle cx="12" cy="12" r="4" fill="purple"/>
-                    </svg> Videos demostrando los ejercicios</li>
                     <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
-                      <circle cx="12" cy="12" r="4" fill="purple"/>
-                  </svg> Atención por Whatsapp de lunes a
-                  viernes entre las 9 y las 19hs</li>
-                  <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
-                    <circle cx="12" cy="12" r="4" fill="purple"/>
-                </svg> videollamada una vez por mes para
-                aclarar dudas y consultas</li>
-                      
-                      <!-- Agrega más índices según sea necesario -->
+                        <circle cx="12" cy="12" r="4" fill="purple" />
+                      </svg> Armamos mensualmente tu plan de entrenamiento y de nutrición.</li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="4" fill="purple" />
+                      </svg> Videos demostrando los ejercicios</li>
+
+
+                    <!-- Agrega más índices según sea necesario -->
                   </ul>
                   <div class="precios">
-                      <!-- Precio del servicio -->
-                      <span class="price">
-                          Precio: <strong>$49,99 USD</strong>
-                      </span>
-                      <!-- Botón de comprar -->
-                      <div class="main-button">
-                          <a href="">Comprar</a>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <div class="col-lg-6 currently-market-item all msc">
-        <div class="item">
-            <div class="left-image">
-                <img src="assets/images/market-01.jpg" alt="" style="border-radius: 20px; min-width: 195px;">
-            </div>
-            <div class="right-content">
-                <h4>PLAN ELITE</h4>
-                <span class="author">
-                  <img src="assets/images/author.jpg" alt="" style="max-width: 50px; border-radius: 50%;">
-                  <span class="stars">⭐️⭐️⭐️⭐️⭐️</span>
-                  
-                  
-              </span>>
-                <div class="line-dec"></div>
-                <!-- Lista de índices -->
-                <ul class="index-list">
-                    <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
-                      <circle cx="12" cy="12" r="4" fill="purple"/>
-                  </svg> Armamos mensualmente tu plan de entrenamiento y de nutrición.</li>
-                    <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
-                      <circle cx="12" cy="12" r="4" fill="purple"/>
-                  </svg> Videos demostrando los ejercicios</li>
-                  <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
-                    <circle cx="12" cy="12" r="4" fill="purple"/>
-                </svg>Atención por whatsapp 24HS</li>
-                <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
-                  <circle cx="12" cy="12" r="4" fill="purple"/>
-              </svg> Videollamada dos veces por mes para
-              aclarar dudas y consultas</li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
-                <circle cx="12" cy="12" r="4" fill="purple"/>
-            </svg> Entrenamiento Personalizado dos veces
-            por mes en mi gimnasio</li>
-                    
-                    <!-- Agrega más índices según sea necesario -->
-                </ul>
-                <div class="precios">
                     <!-- Precio del servicio -->
                     <span class="price">
-                        Precio: <strong>$149,99 USD</strong>
+                      Precio: <strong>$9,99 USD</strong>
                     </span>
                     <!-- Botón de comprar -->
                     <div class="main-button">
-                        <a href="">Comprar</a>
+                      <a href="">Comprar</a>
                     </div>
+                  </div>
                 </div>
+              </div>
             </div>
-        </div>
-    </div> 
+
+            <div class="col-lg-6 currently-market-item all msc">
+              <div class="item">
+                <div class="left-image">
+                  <img src="assets/images/img2.png" alt="" style="border-radius: 20px; min-width: 195px;">
+                </div>
+                <div class="right-content">
+                  <h4>PLAN AVANZADO</h4>
+                  <span class="author">
+                    <img src="assets/images/icon-01.png" alt="" style="max-width: 50px; border-radius: 50%;">
+                    <span class="stars">⭐️⭐️⭐️</span>
+
+
+                  </span>>
+                  <div class="line-dec"></div>
+                  <!-- Lista de índices -->
+                  <ul class="index-list">
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="4" fill="purple" />
+                      </svg> Armamos mensualmente tu plan de entrenamiento y de nutrición.</li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="4" fill="purple" />
+                      </svg> Videos demostrando los ejercicios</li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="4" fill="purple" />
+                      </svg> Me escribís por WhatsApp cada dos semanas para ponernos al tanto de cómo
+                      venís.</li>
+
+                    <!-- Agrega más índices según sea necesario -->
+                  </ul>
+                  <div class="precios">
+                    <!-- Precio del servicio -->
+                    <span class="price">
+                      Precio: <strong>$24,99 USD</strong>
+                    </span>
+                    <!-- Botón de comprar -->
+                    <div class="main-button">
+                      <a href="">Comprar</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 currently-market-item all msc">
+              <div class="item">
+                <div class="left-image">
+                  <img src="assets/images/img2.png" alt="" style="border-radius: 20px; min-width: 195px;">
+                </div>
+                <div class="right-content">
+                  <h4>PLAN PROFESIONAL</h4>
+                  <span class="author">
+                    <img src="assets/images/icon-01.png" alt="" style="max-width: 50px; border-radius: 50%;">
+                    <span class="stars">⭐️⭐️⭐️⭐️</span>
+
+
+                  </span>>
+                  <div class="line-dec"></div>
+                  <!-- Lista de índices -->
+                  <ul class="index-list">
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="4" fill="purple" />
+                      </svg> Armamos mensualmente tu plan de entrenamiento y de nutrición.</li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="4" fill="purple" />
+                      </svg> Videos demostrando los ejercicios</li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="4" fill="purple" />
+                      </svg> Atención por Whatsapp de lunes a
+                      viernes entre las 9 y las 19hs</li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="4" fill="purple" />
+                      </svg> videollamada una vez por mes para
+                      aclarar dudas y consultas</li>
+
+                    <!-- Agrega más índices según sea necesario -->
+                  </ul>
+                  <div class="precios">
+                    <!-- Precio del servicio -->
+                    <span class="price">
+                      Precio: <strong>$49,99 USD</strong>
+                    </span>
+                    <!-- Botón de comprar -->
+                    <div class="main-button">
+                      <a href="">Comprar</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 currently-market-item all msc">
+              <div class="item">
+                <div class="left-image">
+                  <img src="assets/images/img2.png" alt="" style="border-radius: 20px; min-width: 195px;">
+                </div>
+                <div class="right-content">
+                  <h4>PLAN ELITE</h4>
+                  <span class="author">
+                    <img src="assets/images/icon-01.png" alt="" style="max-width: 50px; border-radius: 50%;">
+                    <span class="stars">⭐️⭐️⭐️⭐️⭐️</span>
+
+
+                  </span>>
+                  <div class="line-dec"></div>
+                  <!-- Lista de índices -->
+                  <ul class="index-list">
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="4" fill="purple" />
+                      </svg> Armamos mensualmente tu plan de entrenamiento y de nutrición.</li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="4" fill="purple" />
+                      </svg> Videos demostrando los ejercicios</li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="4" fill="purple" />
+                      </svg>Atención por whatsapp 24HS</li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="4" fill="purple" />
+                      </svg> Videollamada dos veces por mes para
+                      aclarar dudas y consultas</li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="4" fill="purple" />
+                      </svg> Entrenamiento Personalizado dos veces
+                      por mes en mi gimnasio</li>
+
+                    <!-- Agrega más índices según sea necesario -->
+                  </ul>
+                  <div class="precios">
+                    <!-- Precio del servicio -->
+                    <span class="price">
+                      Precio: <strong>$149,99 USD</strong>
+                    </span>
+                    <!-- Botón de comprar -->
+                    <div class="main-button">
+                      <a href="">Comprar</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
 
           </div>
@@ -541,7 +556,7 @@
   </div>
   </div>
 
-  <div  class="item-details-page2">
+  <div id="formulario" class="item-details-page2">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
@@ -556,21 +571,21 @@
               <div class="col-lg-6">
                 <fieldset>
                   <label for="title">Nombre</label>
-                  <input type="text" name="title" id="title" placeholder="nombre" autocomplete="on" required>
+                  <input style="font-family:montserrat !important;" type="text" name="title" id="title" placeholder="nombre" autocomplete="on" required>
                 </fieldset>
               </div>
 
               <div class="col-lg-6">
                 <fieldset>
                   <label for="username">Mail</label>
-                  <input type="email" name="username" id="username" placeholder="email@.com" autocomplete="on" required>
+                  <input style="font-family:montserrat !important;" type="email" name="username" id="username" placeholder="email@.com" autocomplete="on" required>
                 </fieldset>
               </div>
 
               <div class="col-lg-12">
                 <fieldset>
                   <label for="price">Objetivo</label>
-                  <input type="text" name="price" id="price" placeholder="Ej: Competir, Definir " autocomplete="on"
+                  <input style="font-family:montserrat !important;" type="text" name="price" id="price" placeholder="Ej: Competir, Definir " autocomplete="on"
                     required>
                 </fieldset>
               </div>
@@ -599,7 +614,7 @@
   <footer>
     <div class="container">
       <div class="row">
-        <div class="col-lg-6" >
+        <div class="col-lg-6">
           <!-- Logo -->
           <img class="loguito" src="./assets/images/Logo-gg-blanco.png" alt="Logo">
         </div>
@@ -636,7 +651,7 @@
   <script src="assets/js/popup.js"></script>
   <script src="assets/js/custom.js"></script>
   <script src="assets/js/scroll.js"></script>
-  
+
 
 </body>
 
