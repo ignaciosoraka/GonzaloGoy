@@ -3445,4 +3445,47 @@
 		$.support.transform3d = tests.csstransforms3d();
 	}
 
-})(window.Zepto || window.jQuery, window, document);
+})(window.Zepto || window.jQuery, window, document);document.addEventListener('DOMContentLoaded', function() {
+	var owl = $('.owl-collection');
+  
+	owl.owlCarousel({
+	  loop: true,
+	  margin: 20,
+	  autoplay: true,
+	  autoplayTimeout: 5000, // Cambia este valor según sea necesario
+	  autoplayHoverPause: true, // Pausa el carrusel cuando se pasa el mouse sobre él
+	  responsiveClass:true,
+	  responsive:{
+		0:{
+		  items:1,
+		  nav:true
+		},
+		768:{
+		  items:3,
+		  nav:true
+		}
+	  }
+	});
+  
+	var videos = document.querySelectorAll('.owl-collection video');
+  
+	// Agrega eventos a los videos para detener y reanudar el carrusel
+	videos.forEach(function(video) {
+	  video.addEventListener('play', function() {
+		owl.trigger('stop.owl.autoplay');
+	  });
+  
+	  video.addEventListener('pause', function() {
+		owl.trigger('play.owl.autoplay');
+	  });
+  
+	  video.addEventListener('mouseenter', function() {
+		owl.trigger('stop.owl.autoplay');
+	  });
+  
+	  video.addEventListener('mouseleave', function() {
+		owl.trigger('play.owl.autoplay');
+	  });
+	});
+  });
+  

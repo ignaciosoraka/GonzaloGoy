@@ -1163,6 +1163,22 @@ Categories & Collections Style
   opacity: 1;
 }
 
+
+
+/*videos*/
+
+
+
+.owl-collection video {
+  width: 100%; /* Ocupa el ancho completo del contenedor */
+  height: auto; /* Altura automática para mantener la proporción del video */
+  display: block; /* Asegura que los videos se muestren en una línea */
+  max-width: 100%; /* Limita el ancho máximo del video al 100% del contenedor */
+  max-height: 500px; /* Altura máxima de los videos */
+ 
+}
+
+
 @media (max-width:786px){
 
   .section-heading h2{
