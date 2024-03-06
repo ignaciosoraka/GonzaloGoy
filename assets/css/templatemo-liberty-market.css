@@ -1433,6 +1433,17 @@ Currently Market Style
   border-bottom: 1px solid #7453fc;
 }
 
+.titulo{
+ 
+    position: relative;
+    z-index: 2;
+    margin-top: 0px;
+    margin-bottom: 80px;
+    text-align: center;
+
+}
+
+
 .precio {
   display: flex;
   justify-content: space-between;
