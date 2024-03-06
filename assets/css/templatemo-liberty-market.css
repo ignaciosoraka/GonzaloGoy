@@ -290,6 +290,17 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); 
 }
 
+@media (max-width:786px){
+  .main-button a {
+    font-size: 8px;
+  }
+  .border-button a{
+    font-size: 8px;
+  }
+  
+}
+
+
 .main-button a:after {
   width: 78%;
   height: 2px;
@@ -490,6 +501,9 @@ Header Style
   background-color: transparent;
 }
 
+
+
+
 .header-area .main-nav .logo {
   flex-basis: 30%;
   -webkit-transition: all 0.3s ease 0s;
@@ -498,9 +512,13 @@ Header Style
   transition: all 0.3s ease 0s;
 }
 
+
 .header-area .main-nav .logo img {
   width: 223px;
+
 }
+
+
 
 .background-header .main-nav .logo {
   margin-top: 8px;
@@ -682,7 +700,7 @@ Header Style
 }
 
 .background-header .main-nav .menu-trigger.active span:after {
-
+  background-color: #7453fc;
 }
 
 .header-area.header-sticky {
@@ -750,7 +768,7 @@ Header Style
   }
 
   .header-area {
-    background-color: #f7f7f7;
+    
     padding: 0px 15px;
     height: 100px;
     box-shadow: none;
@@ -888,16 +906,42 @@ Banner Style
   line-height: 66px;
   text-transform: uppercase;
 }
-
-.main-banner p {
-  margin-top: 20px;
-}
-
 .main-banner .buttons {
   margin-top: 30px;
   display: flex;
   justify-content: start;
 }
+@media (max-width:786px){
+  .main-banner {
+    background-image: url(../images/img-gg-header-fondo.jpg);
+    padding-top: 140px;
+  padding-bottom: 120px;
+  }
+  .header-text {
+    text-align: center;
+  }
+
+  .main-banner .buttons{
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  .buttons a {
+    margin: 0 10px; /* Espacio entre los botones */
+  }
+
+
+  .main-banner h2 {
+    color: #fff;
+    font-size: 25px;}
+}
+
+.main-banner p {
+  margin-top: 20px;
+}
+
+
 
 .main-banner .border-button {
   margin-right: 15px;
