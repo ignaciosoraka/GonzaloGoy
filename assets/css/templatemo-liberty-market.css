@@ -1083,13 +1083,43 @@ Categories & Collections Style
   padding: 30px;
 }
 
+
 .collections .item .down-content h4 {
+  font-size: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.964);
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.collections .item .down-content2 {
+  background: linear-gradient(-45deg, #A06CD5, #322439,#8c50c9);
+    background-size: 400% 400%;
+    animation: gradient-e60a44dc 15s ease-in-out infinite;
+  border: 1px solid #404245;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 30px;
+}
+@keyframes gradient-e60a44dc {
+  0% {
+      background-position: 0% 50%;
+  }
+
+  50% {
+      background-position: 100% 50%;
+  }
+
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+.collections .item .down-content2 h4 {
   font-size: 20px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   margin-bottom: 20px;
   padding-bottom: 20px;
 }
-
 .collections .item {
   padding-bottom: 60px;
 }
