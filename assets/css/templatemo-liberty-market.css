@@ -1311,8 +1311,8 @@ Create NFT Style
 
 
 .item .icon {
-  width: 62px;
-  height: 62px;
+  width: 82px;
+  height: 82px;
   display: inline-block;
   text-align: center;
   line-height: 62px;
@@ -1321,7 +1321,7 @@ Create NFT Style
 }
 
 .create-nft .item .icon img {
-  max-width: 31px;
+  max-width: 52px;
 }
 
 .create-nft h4 {
@@ -1338,6 +1338,89 @@ Create NFT Style
   color: #3CF;
 }
 
+/* 
+---------------------------------------------
+Preguntas frecuentes 
+--------------------------------------------- 
+*/
+
+/* styles.css */
+
+/* styles.css */
+
+.faq-section {
+  max-width: 800px;
+  margin: 40px auto 100px auto;
+  padding: 20px;
+  background-image: url('../images/Gradient-Purple-Wallpaper-1080p.jpg'); /* Agregar la imagen de fondo */
+  background-size: cover; /* Ajustar el tamaño de la imagen */
+  border-radius: 10px;
+}
+
+
+
+.faq-section h2 {
+  color: #ffffff; /* Cambiamos el color del título */
+  margin-top: 20px; /* Eliminamos el margen superior predeterminado */
+  margin-bottom: 40px; /* Añadimos margen inferior para separación */
+  text-align: center;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.question {
+  cursor: pointer;
+  margin: 0;
+  padding: 15px;
+  background-color: #A06CD5;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-family: montserrat;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Agregamos la sombra */
+}
+
+.question:hover {
+  background-color: #7453fc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.answer {
+  padding: 15px;
+  background-color: #070707;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: montserrat;
+  overflow: hidden; /* Ocultar el contenido que desborda */
+  max-height: 0; /* Altura máxima inicialmente 0 para ocultar la respuesta */
+  transition: max-height 0.3s ease; /* Transición suave para la altura máxima */
+  visibility: hidden; /* Ocultar la respuesta */
+}
+
+.open .answer {
+  visibility: visible; /* Mostrar la respuesta */
+  max-height: 200px; /* Altura máxima suficiente para mostrar el contenido */
+}
+
+
+.open .question::after {
+  content: "▼";
+  float: right;
+}
+
+.question::after {
+  content: "►";
+  float: right;
+}
+
+
 
 
 /* 
@@ -1351,7 +1434,7 @@ Currently Market Style
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  padding: 120px 0px;
+  padding: 80px 0px;
   position: relative;
 }
 
